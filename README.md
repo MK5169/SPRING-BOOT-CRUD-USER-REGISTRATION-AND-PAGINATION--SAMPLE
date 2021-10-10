@@ -1,2 +1,2 @@
 # springbootloginwithcrud
- Simple Spring boot application for login and registration program  using spring web, spring data jpa and mysql with CRUD operations.
+ Simple Spring boot application for User creation, Delete, Read, update and pagination is used to view the users. This program created using spring web, spring data jpa and mysql.
