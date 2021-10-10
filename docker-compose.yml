@@ -1,0 +1,20 @@
+version: '3'
+services:
+ mysql_db:
+   image: mysql:8.0
+   ports:
+     - 3306:3306
+   environment:
+     - MYSQL_DATABASE=authlogin
+     - MYSQL_USER=root
+     - MYSQL_PASSWORD=admin
+ 
+ springboot-docker-container:
+   image: springboot-docker-container
+   ports:
+     - 8080:8080
+   build:
+     context: ./
+     dockerfile: dockerfile
+   depends_on:
+     - mysql_db
